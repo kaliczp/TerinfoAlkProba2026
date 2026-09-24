@@ -26,7 +26,7 @@ Kókai Levente
 
 Könyves Zoltán
 
-Laczkovich Dániel
+Laczkovich Dániel Gyömrő
 
 Lőrincz Tamás
 
