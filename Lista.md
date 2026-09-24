@@ -1,4 +1,4 @@
-# Névsor
+# Szerkesztendő névsor
 
 Balogh Bence
 
@@ -36,11 +36,11 @@ Patthy Domonkos
 
 Sallay Dávid 6767
 
-Simon Mátyás (Sopron, Szombathely, Pannonhalma)
+Simon Mátyás
 
 Sinka Ádám
 
-Soponyai Gergő 12345
+Soponyai Gergő vizsla
 
 Stocker Ádám Stoki 16
 
@@ -52,6 +52,6 @@ Szentirmai Soma Pesti bevándorló
 
 Szépvölgyi Zétény
 
-Zimány Gábor a. Lajhár
+Zimány Gábor
 
 Kalicz Péter Kunhegyes
