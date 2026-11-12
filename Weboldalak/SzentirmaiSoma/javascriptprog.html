@@ -5,6 +5,19 @@
     <title>Szentirmai Soma Javascript</title> 
   </head>
 <body>
-<h1 style="text-align:center">Javacript függvény</h1>
+<h1>Javascript Függvény</h1>
+<p>Ez a funkció kösszönni fog.</p>
+
+<p id="demo"></p>
+
+<script>
+function sayHello() {
+  return "Köszön!";
+}
+
+let message = sayHello();
+
+document.getElementById("demo").innerHTML = message;
+</script>
 </body>
 </html>
