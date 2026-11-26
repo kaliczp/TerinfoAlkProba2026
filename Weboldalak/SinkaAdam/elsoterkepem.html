@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="hu">
 <head>
 <meta charset="utf-8">
 <title>Térkép</title>
 
 <style>
-#map{
-  height:400px;
-  width:100%;
+#map {
+  height: 400px;
+  width: 100%;
+  border: 1px solid #333;
+  box-sizing: border-box;
 }
 </style>
 </head>
@@ -18,29 +20,44 @@
 
 <script>
 function initMap() {
-
-  const pozicio = {
-    lat: 47.189533, 
-
-
-    lng: 16.944142
-  };
+  const faraktarUtca13 = { lat: 47.6886067, lng: 16.5780132 };
+  const pozicio = { lat: 47.189533, lng: 16.944142 };
 
   const map = new google.maps.Map(
     document.getElementById("map"),
     {
-      zoom: 9,
-      center: pozicio
+      zoom: 15,
+      center: faraktarUtca13
     }
   );
 
+  // Kijelölt hely: Sopron, Faraktár utca 13
+  const faraktarMarker = new google.maps.Marker({
+    position: faraktarUtca13,
+    map: map,
+    title: "Sopron, Faraktár utca 13"
+  });
+
+  // Piros házikó ikon a másik pontra
+  const hazikoIkon = {
+    path: "M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z",
+    fillColor: "#e53935",
+    fillOpacity: 1,
+    strokeColor: "#7f0000",
+    strokeWeight: 1.5,
+    scale: 1.5,
+    anchor: new google.maps.Point(12, 20)
+  };
+
   const marker = new google.maps.Marker({
     position: pozicio,
-    map: map
+    map: map,
+    icon: hazikoIkon,
+    title: "Házikó"
   });
 
   marker.addListener("click", () => {
-    alert("A markerre kattintottál!");
+    alert("A házikóra kattintottál!");
   });
 }
 </script>
