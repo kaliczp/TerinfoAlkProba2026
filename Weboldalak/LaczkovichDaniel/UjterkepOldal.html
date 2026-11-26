@@ -16,7 +16,7 @@
 <body>
 <H1>Itt lesz a térképem.</H1>
 <div id="map"></div>
-
+ 
 <script>
 function initMap() {
 
@@ -32,15 +32,17 @@ function initMap() {
       center: pozicio
     }
   );
-  
- const marker = new google.maps.Marker({
+
+const marker = new google.maps.Marker({
   position: pozicio,
   map: map,
-  icon:"png-map-marker-png-Blue-Google-Map-Marker"
+  icon: "https://maps.google.com/mapfiles/kml/shapes/homegardenbusiness.png"
+});
+ 
+ } 
 </script>
-  <script
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQfIDF1PAK-7ZioLgeBTDQ3YIumDxLQds&libraries=maps,marker"
-    defer
+ <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQfIDF1PAK-7ZioLgeBTDQ3YIumDxLQds&callback=initMap"
   ></script>
 </body>
 </HTML>
